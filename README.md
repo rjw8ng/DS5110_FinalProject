@@ -1,4 +1,4 @@
-# Stock Market Forecasting
+# Stock Market Forecasting #
 Team Members: Ami Kano (ak7ra), Theodore Thormann (nbx5kp), Royal Wang (rjw8ng)
 
 ## Motivation & Concrete Problem Statement:
