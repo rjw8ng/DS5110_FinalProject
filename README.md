@@ -25,7 +25,7 @@ The experimental design will be split into three phases:
   - Time Series
     - Multivariate time-series model (ARIMA) forecasting the fluctuations in stock prices
     - Implemented using the Pandas and Statsmodels libraries
-  - Long Short Term Memory (LSTM)
+  - Long Short Term Memory (LSTM) and Gated Recurrent Unit (GRU)
     - Type of Recurrent Neural Network (RNN) used in time series predicting
     - Implemented using the Keras library in Python
 - Model Performance Measurement
