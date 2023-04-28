@@ -15,7 +15,7 @@ The problem statement is as follows: What will the stock price be in the future 
 
 ## Experimental Design & Approach:
 
-Our approach this the experimental design will be split into three phases:
+The experimental design will be split into three phases:
 - Pre-Modeling Data Processing
   - Ensure quality of data through exploratory data analysis and data cleaning
       - Check for seasonality in data
