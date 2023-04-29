@@ -44,3 +44,15 @@ The experimental design will be split into three phases:
 
 Stock Market Data - Nifty 100 Stocks (1 min) data:
 https://www.kaggle.com/datasets/debashis74017/stock-market-data-nifty-50-stocks-1-min-data
+
+## Data Pre-processing
+
+The original 60 GB data set from Kaggle consists of time-series data from a portfolio of Nifty 100 stocks. Each stock contains 59 features detailing pricing values for every 5 minutes during a time period between February 2015 and October 2022.
+
+Since the dataset was very large, a local machine could not store data. This required investigation into other platforms to host the data. In the end, using the University of Virginia's resource computing platform, Rivanna, allowed for 2 TBs of memory allocation. This provided ample amount of storage to both store and process the large data set.
+
+Downloading the dataset from Kaggle into Rivanna used python and Kaggle's API. First, a Kaggle API token was requested through a user's Kaggle profile. Once obtained, the opendatasets package was installed in Rivanna that helps download datasets from online sources such as Kaggle or Google Drive. Using the download function from this package, a zipped dataset was downloaded directly into a Rivanna folder. Once this zipped file was downloaded into the folder, the zipfile package was required to unzip the contents of the dataset containing the information on the 100 stocks.
+
+After unzipping the data file into Rivanna, 12 stocks were deleted because the stock contained less than 600,000 rows of data collected. Therefore, the time frame of the data did not match the remaining stocks. To provide more accurate predictions and assist with fitting the models, this data set was consolidated from the raw data. First, all the rows with overlapping time stamps were added together, forming one stock portfolio that consisted of all 88 stocks. This was done to increase the ability to run the multitude of models and focus on the machine learning aspect of the model's predictions. The resulting CSV file was approximately 707 MB and contained 639,981 rows. 
+
+This new file was then used to create two data sets. One consolidates the file further into monthly stock closing prices and the second into daily stock closing prices. The reason for this split is to allow the models to provide more accurate predictions and to allow the training to complete within a reasonable time.
