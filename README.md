@@ -7,6 +7,7 @@ The problem statement is as follows: What will the stock price be in the future 
 
 ## Folder structure
 * `ARIMA`: Test models for ARIMA
+* `Data` : Data preprocessing notebook and datasets used in analysis
 * `Final`: Final models with ARIMA, GRU, LSTM
 * `GRU`: Test models for GRU
 * `LSTM`: Test models for LSTM
