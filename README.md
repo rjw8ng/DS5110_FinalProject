@@ -1,5 +1,5 @@
 # Stock Market Forecasting #
-Team Members: Ami Kano (ak7ra), Theodore Thormann (nbx5kp), Royal Wang (rjw8ng)
+Team Members: Royal Wang (rjw8ng), Ami Kano (ak7ra), Theodore Thormann (nbx5kp)
 
 ## Project Overview
 
